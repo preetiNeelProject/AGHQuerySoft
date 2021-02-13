@@ -1,0 +1,117 @@
+	    /* Stackoverflow preview fix, please ignore
+	    .navbar-nav {
+	      flex-direction: row;
+	    }
+
+	    .nav-link {
+	      padding-right: .5rem !important;
+	      padding-left: .5rem !important;
+	    }*/
+
+	    /* Fixes dropdown menus placed on the right side*/
+	    .lft-vertical-border{
+	    	border-left:1px solid #567080;
+	    }
+	    .rgt-menu{
+	    	width:18%;
+	    }
+	    .ml-auto .dropdown-menu {
+	      left: auto !important;
+	      right: 0px;
+	    }
+		.nav-center{
+
+			float: none;
+			text-align:center;
+			border:1px solid #000;
+
+		}
+	    	.btn-m10 {
+			margin-left:3px;
+			width:120px;
+		}
+
+		.user {
+		  border-radius: 50%;
+
+		  /*object-fit: cover;*/
+		}
+
+		.btn-outline-light{
+			color: #567080 !important;
+			/*border-color: #567080 !important;*/
+		}
+		.dropdown-item{
+			color: #567080 !important;
+			font-size:14px;
+		}
+		.hi-user{
+			color: #567080 !important;
+		}
+		.btn-outline-light:hover, .btn-outline-light:focus, .btn-outline-light:active, .btn-outline-light.active, .open>.dropdown-toggle.btn-outline-light, .show>.btn-outline-light.dropdown-toggle {
+		    color: #ffffff !important;
+		    background-color: #0E334A;
+		    border-color: #F4F8F9 !important; /*set the color you want here*/
+		}
+
+		/*----------------------------------------------------------*/
+		.bdy-bg{
+			background: #F4F8F9 !important;
+		}
+		.bg-white{
+			background: #ffffff !important;
+		}
+		#workarea {
+		    height:100% !important;
+		}
+		#footer {
+		    background: #0E334A !important;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			/* Set the fixed height of the footer here
+			height: 60px;
+			line-height: 60px; */
+			/* Vertically center the text there */
+			font-weight: 400;
+			font-size: 11px;
+			letter-spacing:1px;
+		}
+		.row-pd{
+			padding: 10px 0 10px 0;
+		}
+		/*-------------------------------------------------------*/
+		.dropdown-submenu {
+		  position: relative;
+		}
+
+		.dropdown-submenu a::after {
+		  transform: rotate(-90deg);
+		  position: absolute;
+		  right: 6px;
+		  top: .8em;
+		}
+
+		.dropdown-submenu .dropdown-menu {
+		  top: 0;
+		  left: 100%;
+		  margin-left: .1rem;
+		  margin-right: .1rem;
+		}
+
+		.WelTxtHd{
+			margin:10px 0;
+			font-size:30px;
+			font-weight:700;
+			color:#0E334A;
+			text-align:center;
+			letter-spacing:1px;
+		}
+		.WelTxtSub{
+			margin:10px 0 10px 0;
+			font-size:25px;
+			font-weight:500;
+			color:#567080;
+			text-align:center;
+			letter-spacing:1px;
+		}

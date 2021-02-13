@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="base.definition" template="/WEB-INF/views/tiles/mainTemplate.jsp">
+        <put-attribute name="title" value=""></put-attribute>
+        <put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/menu.jsp"></put-attribute>
+        <put-attribute name="body" value=""></put-attribute>
+        <put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="main.definition" template="/WEB-INF/views/tiles/basicTiles/basicTemplate.jsp">
+        <put-attribute name="title" value=""></put-attribute>
+        <put-attribute name="body" value=""></put-attribute>
+    </definition>
+    
+    <definition name="error" extends="main.definition">
+        <put-attribute name="title" value="Error"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/index.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="errorPage" extends="main.definition">
+        <put-attribute name="title" value="Error"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/errorPage.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="index" extends="main.definition">
+        <put-attribute name="title" value="AGH-QuerySoft"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/index.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="click" extends="main.definition">
+        <put-attribute name="title" value="AGH-QuerySoft"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/Clickjack.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="gpfView" extends="base.definition">
+        <put-attribute name="title" value="GPF Ledger Retrieval"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/gpfView.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="home" extends="base.definition">
+        <put-attribute name="title" value="QuerySoft Document Management System"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/home.jsp"></put-attribute>
+    </definition>
+ 	
+    <definition name="users/currentUsers" extends="base.definition">
+        <put-attribute name="title" value="Current Users"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/users/currentUsers.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="users/userProfile" extends="base.definition">
+        <put-attribute name="title" value="User Details"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/users/userProfile.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="users/addUser" extends="base.definition">
+        <put-attribute name="title" value="Add User"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/users/addUser.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/neelDsi" extends="base.definition">
+        <put-attribute name="title" value="DSI-Neel"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/neelDsi.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/agDsi" extends="base.definition">
+        <put-attribute name="title" value="AGDsi"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/agDsi.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/bulkUpload" extends="base.definition">
+        <put-attribute name="title" value="Bulk Upload"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/bulkUpload.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/Debit Vouchers/retrieval" extends="base.definition">
+        <put-attribute name="title" value="Retrieve Debit Vouchers Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/Debit Vouchers/retrieval.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/Debit Vouchers/upload" extends="base.definition">
+        <put-attribute name="title" value="Upload Debit Vouchers Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/Debit Vouchers/upload.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/Debit Vouchers/update" extends="base.definition">
+        <put-attribute name="title" value="Update Debit Vouchers Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/Debit Vouchers/update.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/GPF Ledger Cards/retrieval" extends="base.definition">
+        <put-attribute name="title" value="Retrieve GPF Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/GPF Ledger Cards/retrieval.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/GPF Ledger Cards/upload" extends="base.definition">
+        <put-attribute name="title" value="Upload GPF Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/GPF Ledger Cards/upload.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/GPF Ledger Cards/update" extends="base.definition">
+        <put-attribute name="title" value="Update GPF Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/GPF Ledger Cards/update.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/Nominations/retrieval" extends="base.definition">
+        <put-attribute name="title" value="Retrieve Nomination Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/Nominations/retrieval.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/Nominations/upload" extends="base.definition">
+        <put-attribute name="title" value="Upload Nomination Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/Nominations/upload.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/Nominations/update" extends="base.definition">
+        <put-attribute name="title" value="Update Nomination Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/Nominations/update.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/Pension/retrieval" extends="base.definition">
+        <put-attribute name="title" value="Retrieve Pension Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/Pension/retrieval.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/Pension/upload" extends="base.definition">
+        <put-attribute name="title" value="Upload Pension Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/Pension/upload.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="departments/Pension/update" extends="base.definition">
+        <put-attribute name="title" value="Update Pension Record"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/departments/Pension/update.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="tracking/documentAudit" extends="base.definition">
+        <put-attribute name="title" value="Tracking"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tracking/documentAudit.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="tracking/logs" extends="base.definition">
+        <put-attribute name="title" value="Logs"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/tracking/logs.jsp"></put-attribute>
+    </definition>
+    
+</tiles-definitions>
